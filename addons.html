@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add-ons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ff6f61;
+      --bg2: #ffcc70;
+      --text: #fff8f4;
+      --muted: #ffe6d0;
+      --card: rgba(255,255,255,0.08);
+      --accent: #ff8a5b;
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, var(--bg), var(--bg2));
+      color: var(--text);
+    }
+    .container { max-width: 1100px; margin: auto; padding: 20px; }
+    header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .logo { font-weight: 800; font-size: 1.5rem; }
+    nav a { margin: 0 10px; text-decoration: none; color: var(--text); font-weight: 600; }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; padding: 40px 0; }
+    .hero h1 { font-size: 2rem; }
+    .btn { background: var(--accent); padding: 12px 20px; border: none; border-radius: 30px; font-weight: 700; cursor: pointer; color: var(--text); }
+    .features, .testimonials, .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+    .feature, .testimonial { background: var(--card); padding: 15px; border-radius: var(--radius); }
+    .gallery img { width: 100%; border-radius: var(--radius); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+    iframe { width: 100%; border: none; border-radius: var(--radius); aspect-ratio: 16/9; }
+    .price { font-size: 2rem; font-weight: bold; margin: 20px 0; }
+    footer { text-align: center; padding: 20px; color: var(--muted); font-size: 0.9rem; }
+    @media(max-width: 768px) { .hero { grid-template-columns: 1fr; text-align: center; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">MGS</div>
+      <nav>
+        <a href="index.html">Pack Graphique</a>
+        <a href="pack-son.html">Pack Son</a>
+        <a href="addons.html">Add-ons</a>
+        <a href="presets-reshade.html">Presets ReShade</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Mods Add-ons</h1>
+        <p>Vous souhaitez renforcer encore davantage votre immersion ? Découvrez les addons proposés par MGS !</p>
+      </div>
+        
+    </section>
+
+    <section id="features">
+      <h2>Add-ons</h2>
+      <div class="features">
+        
+        <div class="feature" style="max-width: 320px; margin: auto; text-align: center;">
+          <img src="https://cdn.discordapp.com/attachments/1311030870320353320/1398068815128039464/Capture_decran_2593.png?ex=689873cc&is=6897224c&hm=e98f08646a931a3de6ff60ae0d3d79aed19a6a67e3e00ad76ce613a9491db447&" alt="Addon Exemple" style="width: 100%; border-radius: var(--radius); margin-bottom: 15px;">
+          <p> Découvrez les replace d’armes entièrement retravaillés, qui apportent un réalisme et un détail pour enrichir chaque combat dans le jeu.</p>
+          <section id="buy" style="text-align:center">
+            <button class="btn" onclick="window.location.href='https://drive.google.com/drive/folders/18Gjk-zsWP88lKWnsyGjja8gSO5HepKCK?usp=sharing'">Télécharger maintenant</button>
+          </section>
+        </div>
+
+        <div class="feature" style="max-width: 320px; margin: auto; text-align: center;">
+          <img src="https://cdn.discordapp.com/attachments/1155262516440608829/1403870896803807393/image.png?ex=68992028&is=6897cea8&hm=bec9f76ad9f8ed9c6eefdb9ee4d5259e7426fae09c29532af97a0d0f8e361a8d&" alt="Addon Exemple" style="width: 100%; border-radius: var(--radius); margin-bottom: 15px;">
+          <p> Transformer l’apparence des vos personnages en leur offrant des physiques musclés et détaillés pour une immersion visuelle renforcée</p>
+          <section id="buy" style="text-align:center">
+            <button class="btn" onclick="window.location.href='https://drive.google.com/drive/folders/1pjW2xfrO62t0F69JpscxYX4CcGTaMZi9?usp=sharing'">Télécharger maintenant</button>
+          </section>
+        </div>
+        
+        <div class="feature" style="max-width: 320px; margin: auto; text-align: center;">
+          <img src="https://cdn.discordapp.com/attachments/1206609487755219024/1403875025735389285/image.png?ex=68992400&is=6897d280&hm=e03865c545cab50ad19167484cee6e1d7ed9bb2644569bfd8a86a1b932ad20d2&" alt="Addon Exemple" style="width: 100%; border-radius: var(--radius); margin-bottom: 15px;">
+          <p>  Plongez dans une ambiance nocturne ultra réaliste grâce à ce mod qui rend les nuits exceptionnellement sombres.</p>
+          <section id="buy" style="text-align:center">
+            <button class="btn" onclick="window.location.href='https://drive.google.com/drive/folders/1_To5TdQGLztIj4GN4kS-LXxMn2NFPaVg?usp=sharing'">Télécharger maintenant</button>
+          </section>
+        </div>
+
+        <div class="feature" style="max-width: 320px; margin: auto; text-align: center;">
+          <img src="https://cdn.discordapp.com/attachments/1206609487755219024/1403875645322297424/image.png?ex=68992494&is=6897d314&hm=0d8348c5db9843ca95988cf53d5d0aa9c42b79d5eb4c62bd2b47ad83fc403c85&" alt="Addon Exemple" style="width: 100%; border-radius: var(--radius); margin-bottom: 15px;">
+          <p>   Découvrez ce mod qui enrichit la végétation avec des forêts denses et majestueuses, offrant un paysage naturel époustouflant et une immersion totale</p>
+          <section id="buy" style="text-align:center">
+            <button class="btn" onclick="window.location.href='https://drive.google.com/drive/folders/1Qd-QcjMHsMTUH7jZWGZPTDd9p2QM2_rv?usp=sharing'">Télécharger maintenant</button>
+          </section>
+        </div>
+
+    </section>
+
+  
+    <footer>
+      © MGS 2025 — Tous droits réservés | <a href="#" style="color:var(--muted)">Support</a>
+    </footer>
+  </div>
+</body>
+</html>
+

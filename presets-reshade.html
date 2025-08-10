@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add-ons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ff6f61;
+      --bg2: #ffcc70;
+      --text: #fff8f4;
+      --muted: #ffe6d0;
+      --card: rgba(255,255,255,0.08);
+      --accent: #ff8a5b;
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, var(--bg), var(--bg2));
+      color: var(--text);
+    }
+    .container { max-width: 1100px; margin: auto; padding: 20px; }
+    header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .logo { font-weight: 800; font-size: 1.5rem; }
+    nav a { margin: 0 10px; text-decoration: none; color: var(--text); font-weight: 600; }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; padding: 40px 0; }
+    .hero h1 { font-size: 2rem; }
+    .btn { background: var(--accent); padding: 12px 20px; border: none; border-radius: 30px; font-weight: 700; cursor: pointer; color: var(--text); }
+    .features, .testimonials, .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+    .feature, .testimonial { background: var(--card); padding: 15px; border-radius: var(--radius); }
+    .gallery img { width: 100%; border-radius: var(--radius); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+    iframe { width: 100%; border: none; border-radius: var(--radius); aspect-ratio: 16/9; }
+    .price { font-size: 2rem; font-weight: bold; margin: 20px 0; }
+    footer { text-align: center; padding: 20px; color: var(--muted); font-size: 0.9rem; }
+    @media(max-width: 768px) { .hero { grid-template-columns: 1fr; text-align: center; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">MGS</div>
+      <nav>
+        <a href="index.html">Pack Graphique</a>
+        <a href="pack-son.html">Pack Son</a>
+        <a href="addons.html">Add-ons</a>
+        <a href="presets-reshade.html">Presets ReShade</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Preset Reshade MGS</h1>
+        <p>Vous souhaitez renforcer encore davantage votre immersion ? Découvrez les reshades proposés par MGS !</p>
+      </div>
+        
+    </section>
+
+    <section id="features">
+      <h2>Add-ons</h2>
+      <div class="features">
+        
+        <div class="feature" style="max-width: 320px; margin: auto; text-align: center;">
+          <img src="https://as1.ftcdn.net/jpg/00/99/82/88/1000_F_99828865_lW5dIHE9e4NCI8Lb5XaY4wL5CL32hiAI.jpg" alt="Addon Exemple" style="width: 100%; border-radius: var(--radius); margin-bottom: 15px;">
+          <p> Coming Soon</p>
+          <section id="buy" style="text-align:center">
+            <button class="btn" onclick="window.location.href='LIEN A METTRE'">Télécharger maintenant</button>
+          </section>
+        </div>
+
+        <div class="feature" style="max-width: 320px; margin: auto; text-align: center;">
+          <img src="https://as1.ftcdn.net/jpg/00/99/82/88/1000_F_99828865_lW5dIHE9e4NCI8Lb5XaY4wL5CL32hiAI.jpg" alt="Addon Exemple" style="width: 100%; border-radius: var(--radius); margin-bottom: 15px;">
+          <p> Coming Soon</p>
+          <section id="buy" style="text-align:center">
+            <button class="btn" onclick="window.location.href='LIEN A METTRE'">Télécharger maintenant</button>
+          </section>
+        </div>
+        
+    </section>
+
+  
+    <footer>
+      © MGS 2025 — Tous droits réservés | <a href="#" style="color:var(--muted)">Support</a>
+    </footer>
+  </div>
+</body>
+</html>
+
